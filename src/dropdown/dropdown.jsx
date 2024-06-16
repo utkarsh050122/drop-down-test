@@ -10,7 +10,7 @@ const Dropdown = ({ items }) => {
     setIsOpen(true);
   };
 
-  const handleMouseLeave = () => {
+  const handleMouse = () => {
     setIsOpen(false);
   };
 
@@ -23,7 +23,7 @@ const Dropdown = ({ items }) => {
     <div 
       className="dropdown"
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      onMouseLeave={handleMouse}
     >
       <button className="dropdown-button">
         {selectedItem}
